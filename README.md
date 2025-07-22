@@ -1,8 +1,8 @@
-# Summer Kisses - 關於我們頁面
+# Summer Kisses - 常見Q&A頁面
 
 ## 專案概述
 
-Summer Kisses 是一間專注於製作愛情故事的影像工作室，這個專案是「關於我們」頁面的完整實現。頁面採用現代化的響應式設計，展現工作室的品牌理念、團隊介紹和聯絡資訊。
+Summer Kisses 是一間專注於製作愛情故事的影像工作室，這個專案是「常見Q&A」頁面的完整實現。頁面採用現代化的響應式設計，提供婚禮影片準備相關的常見問題解答，幫助客戶更好地了解服務流程和注意事項。
 
 ## 專案特色
 
@@ -17,34 +17,40 @@ Summer Kisses 是一間專注於製作愛情故事的影像工作室，這個專
 - **互動輪播** - 文字內容輪播展示
 - **社群媒體整合** - 連結 Instagram、YouTube 等平台
 - **無障礙設計** - 符合網頁無障礙標準
+- **FAQ 問答系統** - 提供婚禮影片準備相關問題解答
 
 ## 檔案結構
 
 ```
-SK_page2/
+faq/
 ├── css/                          # 樣式檔案
-│   ├── about.css                 # 關於我們頁面專用樣式
+│   ├── about.css                 # 關於我們頁面樣式（共用）
+│   ├── faq-chat.css              # FAQ 聊天樣式
 │   ├── footer.css                # 頁尾樣式
 │   ├── header-navigation.css     # 頁首導航樣式
 │   ├── navigation-font.css       # 導航字體樣式
 │   └── style.css                 # 主要樣式檔案
 ├── images/                       # 圖片資源
-│   ├── body002/                  # 作品圖片
-│   ├── body003/                  # 作品圖片
 │   ├── favicon/                  # 網站圖示
+│   │   └── SumKiss.png
 │   ├── header/                   # 頁首圖片
-│   ├── hero/                     # 主要橫幅圖片
-│   ├── highlights/               # 精選作品
-│   └── v1/                       # 團隊成員照片
+│   │   └── summerkiss-logo.png
+│   └── hero/                     # 主要橫幅圖片
+│       ├── 0416_01.png
+│       ├── 0416_19.png
+│       ├── 0416_20.png
+│       ├── 0416_25.png
+│       └── 0501_11.png
 ├── js/                          # JavaScript 檔案
-│   ├── aboutmain.js             # 關於我們主要功能
-│   ├── aboutscript.js           # 關於我們腳本
-│   ├── aboutscroll.js           # 滾動效果
+│   ├── aboutmain.js             # 關於我們主要功能（共用）
+│   ├── aboutscript.js           # 關於我們腳本（共用）
+│   ├── aboutscroll.js           # 滾動效果（共用）
 │   ├── carousel.js              # 輪播功能
 │   ├── footer.js                # 頁尾功能
 │   ├── main.js                  # 主要功能
 │   └── scroll.js                # 滾動監聽
-└── index.html                   # 主要 HTML 檔案
+├── index.html                   # 主要 HTML 檔案
+└── README.md                    # 專案說明文件
 ```
 
 ## 技術架構
@@ -63,30 +69,26 @@ SK_page2/
 - 響應式漢堡選單
 - 滾動時背景色變化
 - 社群媒體圖示
+- 導航連結到其他頁面（關於我們、愛情故事、價格方案、常見Q&A）
 
 #### 2. Hero 區塊
 - 全螢幕背景圖片
 - 品牌標語展示
 - 滾動動畫效果
+- 婚禮影片準備Q&A主題
 
-#### 3. 故事介紹區塊
-- 雙欄式佈局
-- 圖片與文字並列
-- Instagram 影片連結
-- 品牌理念展示
+#### 3. FAQ 問答區塊
+- 常見問題分類展示
+- 互動式問答介面
+- 婚禮影片準備相關資訊
+- 客戶服務指南
 
-#### 4. 團隊介紹區塊
-- 團隊成員卡片
-- 互動式文字輪播
-- 個人 Instagram 連結
-- 滑動提示功能
-
-#### 5. 聯絡資訊區塊
+#### 4. 聯絡資訊區塊
 - 三欄式資訊展示
 - 社群媒體連結
 - 預約諮詢按鈕
 
-#### 6. 頁尾 (Footer)
+#### 5. 頁尾 (Footer)
 - 聯絡資訊
 - 社群媒體連結
 - 版權聲明
@@ -97,7 +99,7 @@ SK_page2/
 1. 克隆專案到本地
 ```bash
 git clone [repository-url]
-cd SK_page2
+cd faq
 ```
 
 2. 使用本地伺服器開啟
@@ -126,14 +128,14 @@ php -S localhost:8000
 - 修改 `images/` 目錄中的圖片資源
 - 調整 `css/style.css` 中的品牌色彩
 
-### 更新內容
-- 編輯 `index.html` 中的文字內容
+### 更新 FAQ 內容
+- 編輯 `index.html` 中的問答內容
 - 替換 `images/` 目錄中的圖片
 - 修改社群媒體連結
 
 ### 樣式調整
 - 主要樣式：`css/style.css`
-- 關於我們專用樣式：`css/about.css`
+- FAQ 專用樣式：`css/faq-chat.css`
 - 導航樣式：`css/header-navigation.css`
 
 ## 瀏覽器支援
