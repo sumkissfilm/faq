@@ -57,7 +57,7 @@ body {
 
 .section-title {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 2rem;
+    font-size: 2rem; /* Large Desktop (≥1200px) and Desktop (992px-1199px) */
     font-weight: 400;
     color: #333;
     letter-spacing: 1px;
@@ -81,7 +81,7 @@ body {
 .hero {
     position: relative;
     height: 700px;
-    background-image: url('../images/hero/0416_20.png');
+    background-image: url('../images/hero/0416_25.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ body {
 .about-hero {
     position: relative;
     height: 700px;
-    background-image: url('../images/hero/0416_20.png');
+    background-image: url('../images/hero/0416_25.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,6 +209,34 @@ body {
     }
 }
 
+/* Tablet (768px-991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .section-title {
+        font-size: 2rem; /* 32px */
+    }
+}
+
+/* Mobile Large (576px-767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .section-title {
+        font-size: 1.375rem; /* 22px */
+    }
+}
+
+/* Mobile Small (≤575px) */
+@media (max-width: 575px) {
+    .section-title {
+        font-size: 1.25rem; /* 20px */
+    }
+}
+
+/* Extra Small Mobile (≤399px) */
+@media (max-width: 399px) {
+    .section-title {
+        font-size: 1.25rem; /* 20px */
+    }
+}
+
 /* Mobile Styles (≤576px) */
 @media (max-width: 576px) {
     .hero {
@@ -221,10 +249,6 @@ body {
 
     .about-hero-content p {
         font-size: 0.8125rem;
-    }
-    
-    .section-title {
-        font-size: 1.5rem;
     }
 }
 
@@ -241,3 +265,5 @@ body {
         margin-right: -0.5rem;
     }
 } 
+
+ 
