@@ -36,15 +36,15 @@
 .user-message .message-bubble {
     background: white;
     color: #333;
-    border: 2px solid #F7BC51;
+    border: 1px solid #e9ecef;
     border-bottom-right-radius: 5px;
 }
 
 /* Received Message (Answers) */
 .received-message .message-bubble {
-    background: white;
+    background: #F7BC51;
     color: #333;
-    border: 1px solid #e9ecef;
+    border: 2px solid #F7BC51;
     border-bottom-left-radius: 5px;
 }
 
@@ -60,7 +60,8 @@
 }
 
 .received-message .message-bubble p {
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 /* Responsive Design */
